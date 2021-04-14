@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head') %>
+<body>
+  <%- include('partials/header') %>
+    <main>
+        <form action="#" method="POST">
+            <div class="contenedor-registro">
+              <h3>Registro</h3>
+
+              <label for="name"><b>Nombre y Apellido</b></label>
+              <input type="text" placeholder="Ingresar Nombre y Apellido..." name="name" id="name" required>
+
+              <label for="username"><b>Nombre de Usuario</b></label>
+              <input type="text" placeholder="Ingresar Nombre de Usuario..." name="username" id="username" required>
+
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Ingresar Email..." name="email" id="email" required>
+          
+              <label for="psw"><b>Contraseña</b></label>
+              <input type="password" placeholder="Ingresar Contraseña..." name="psw" id="psw" required>
+          
+              <label for="psw-repeat"><b>Repetir Contraseña</b></label>
+              <input type="password" placeholder="Repeetir Contraseña..." name="psw-repeat" id="psw-repeat" required>
+
+              <label for="fecha-de-nacimiento"><b>Fecha de Nacimiento</b></label>
+              <input class="Calendario" type="date" value="2003-01-01" min="1950-01-01" max="2020-12-31" placeholder="Introduce tu Fecha de Nacimiento..." name="fecha-de-nacimiento" id="fecha-de-nacimiento" required>
+
+              <label for="domicilio"><b>Domicilio</b></label>
+              <input type="text" placeholder="Ingresar Domicilio (Calle y Apto)..." name="domicilio" id="domicilio" required>
+            </div>
+            <div class="contendor-perfil">
+              <label for="perfil"><b>Perfil del Usuario</b></label>
+              <p><b>Tipo de Perfil</b></p>
+              <input type="radio" name="perfil" id="perfil" class="perfil" value="Comprador">Comprador
+              <input type="radio" name="perfil" id="perfil" class="perfil" value="Vendedor">Vendedor
+            </div>
+            <div class="contenedor-interes">
+              <label for="interes"><b>Intereses del Usuario</b></label>
+              <p><b>Comentanos tus Intereses</b></p>
+              <ul>
+              <li class="interes"><input type="checkbox" name="interes" id="interes" value="Electro">Electro</li>
+              <li class="interes"><input type="checkbox" name="interes" id="interes" value="Moda">Moda</li>
+              <li class="interes"><input type="checkbox" name="interes" id="interes" value="Hogar">Hogar</li>
+              <li class="interes"><input type="checkbox" name="interes" id="interes" value="Juguetería">Juguetería</li>
+              <li class="interes"><input type="checkbox" name="interes" id="interes" value="Vida-sana">Vida sana</li>
+              </ul>
+            </div>
+            <div class="imagen-perfil">
+                <label for="imagen-perfil"><b>Elige tu Imagen de Perfil:</b></label>
+                <p><b>Elige tu Imagen de Perfil</b></p>
+                <input type="file" id="imagen-perfil" name="imagen-perfil" accept="image/*">
+              </div>
+              <p>Al crear una cuenta estaras aceptando nuestos <a href="#">Terminos y Condiciones</a>.</p>
+            <div class="contenedor-registro-botones">
+              <button type="reset" class="boton-borrar">Borrar Todo</button>
+              <button type="submit" class="boton-enviar" onclick="location.href='/'">Registrar</button>
+            </div>
+         
+            <div class="contenedor-login2">
+              <p>Si tienes una cuenta, <a href="/login">Loguea aqui</a>.</p>
+            </div>
+          </form>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>

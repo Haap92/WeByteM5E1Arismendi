@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+    <main>
+        <form action="" method="POST">
+            <div class="contenedor-login">
+                <label for="user">Usuario</label>
+                <input type="text" placeholder="Nombre de usuario o email..." name="user" id="user" required>
+                <label for="psw"><b>Contraseña</b></label>
+                <input type="password" placeholder="Contraseña..." name="psw" id="psw" required>
+                <button type="submit" class="boton-enviar">Enviar</button>
+            </div>
+            <div class="contenedor-comp">
+                <input type="checkbox" checked="checked" name="recordarme" class="checkbox-recordarme"> Recordarme
+                <span class="psw"><a href="#">Recuperar Contraseña.</a></span>
+              </div>
+            </form>
+        </form>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>

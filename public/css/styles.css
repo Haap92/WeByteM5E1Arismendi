@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color:#EAC926;
+    padding: 15px;
+    color: #000;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #000;  
+}
+
+p {
+    font-size: 12px;
+}
+
+h3 {
+    font: size 24px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+i {
+    font-size: 1em;
+}
+
+.search-bar{
+    overflow: hidden;
+    width: 150px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.search-bar input#search{
+    width: 150px;
+    height: 40px;
+    background: #ffffff;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: black;
+    padding-left: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.search-bar:hover button.icon, .search-bar:active button.icon, .search-bar:focus button.icon{
+    outline: none;
+    opacity: 1;
+    margin-left: -36px;
+    font-size: 2em;
+}
+
+.search-bar:hover button.icon:hover{
+    background: white;
+}
+
+header .navbar ul {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    text-decoration:none;
+    color: black;
+}
+
+ul li a i {
+    font-size: 12px;
+}
+
+header .tittle {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+header .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+header .menu .menubarras {
+    background-color:#1259c3;
+    font-size: 24px;
+    color:white;
+    height: 36px;
+    width: 36px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #03264C;
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+
+.banner {
+    margin-bottom: -5px;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 15px;
+    background-color: #ebebeb;
+}
+
+main h3 {
+    margin-top: 35px;
+    color: #666;
+    margin-bottom: 35px;
+} 
+
+main section article{
+    margin-bottom: 10px;
+    background-color: #ffffff;
+}
+main section article div{
+    padding: 15px;
+    border-top: 1px solid #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+main section article div i{
+    display: block;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 0;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+label {
+display: none;
+}
+
+
+input[type=text], input[type=password], input[type=date], input[type=file] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+}
+
+input[type=radio]{
+    width: 5%;
+    padding: 12px 20px;
+    margin: 12px 0;
+}
+input[type=checkbox]{
+    width: 5%;
+    padding: 12px 20px;
+    margin: 12px 0;
+}
+
+.boton-enviar {
+    background-color: #03264C;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+.boton-borrar {
+    background-color: #4c0303;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+.contenedor-registro-botones {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contenedor-registro-botones .boton-enviar {
+    background-color: #03264C;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 42%;
+}
+.boton-enviar:hover {
+    background-color: #0022AA;
+}
+
+.contenedor-registro-botones .boton-borrar {
+    background-color: #4c0303;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 42%;
+}
+.boton-borrar:hover {
+    background-color: #8b0000;
+}
+.contenedor-comp{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.contenedor-login .boton-enviar{
+    width: 100%;
+    padding: 12px 20px;
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    margin: 8px auto;
+}
+.contenedor-comp input[type=checkbox]{
+    margin: 0;
+}
+
+.contenedor-interes .interes{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 5px auto;
+}
+.contendor-perfil{
+    width: 100%;
+    padding: 12px 20px;
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+}
+.contenedor-interes{
+    width: 100%;
+    padding: 12px 20px;
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+}
+.imagen-perfil p{
+    width: 100%;
+    padding: 12px 20px;
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+}
+
+.imagen.perfil{
+    max-width: 180px;
+}
+.precio{
+    font-size: 18px;
+    max-width: 30%;
+}
+
+.descuento{
+    font-size: 16px;
+    padding-left: 3%;
+    color: #39b54a;
+    margin-bottom: 20px;
+    max-width: 70%;
+
+}
+
+.descripcion{
+    font-size: 0px;
+    color: #666666;
+    width: 100%;
+    transition: all 200ms;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+footer section{
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 50px;
+}
+footer section i{
+    color:#1259c3;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+footer section i:hover{
+    color:#39b54a
+}
+footer h3{
+    color: #666666;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+footer p{
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+footer .cr{
+    text-align: left;
+    color: gray;
+    margin-left: 5%;
+}
+
+@media (max-width: 360px) {
+    header .navbar{
+        display: none;
+    }
+    header .Top {
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+    header .logo{
+        max-width: 100px;
+    }
+    header .tittle{
+        text-align: center;
+    }
+}
+
+@media (min-width: 361px) {
+    p{
+        font-size: 16px;
+    }
+
+    .search-bar{
+        width: 300px;
+    }
+    .search-bar input#search{
+        width: 300px;
+    }
+    article{
+        max-width: 45%;
+    }
+
+    .descuento{
+        padding-left: 20%;
+    }
+
+    header .menu{
+        display: none;
+    }
+    header .Top {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    header .tittle{
+        font-size: 16px;
+        text-align: right;
+        max-width: 200px;
+    }
+    header .logo{
+        max-width: 200px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between; 
+    }
+    .navbar ul{
+        display: flex;
+    }
+    .navbar li{
+        margin: 0 5px;
+    }
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    input[type=text], input[type=password], input[type=date], input[type=file] {
+        width: 50%;
+    }
+    .contendor-perfil{
+        width: 50%;
+    }
+    .contenedor-interes{
+        width: 50%;
+    }
+    .imagen-perfil p{
+        width: 50%;
+    }
+    .contenedor-login .boton-enviar{
+        width: 50%;
+    }
+    .contenedor-comp{
+        justify-content:center;
+    }
+    .contenedor-comp span{
+        padding-left: 10%;
+    }
+    .boton-enviar{
+        font-size: 16px;
+    }
+    .boton-borrar{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 769px) {
+
+    header .tittle{
+        font-size: 18px;
+        text-align: right;
+        max-width: 210px;
+    }
+    header .logo{
+        max-width: 210px;
+    }
+    header .menu{
+        display: none;
+    }
+    .navbar a{
+        font-size: 16px;
+    }
+    .navbar i{
+        font-size: 16px;
+    }
+    article{
+        max-width: 22%;
+    }
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .precio{
+        font-size: 14px;
+    }
+    .descuento{
+        padding-left: 25%;
+        padding-top: 1%;
+        font-size: 12px;
+    }
+
+    main section article:hover p.descripcion{
+        font-size: 16px;
+    }
+    footer section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    footer section div{
+        max-width: 30%;
+    }
+
+    .boton-enviar{
+        font-size: 18px;
+    }
+    .boton-borrar{
+        font-size: 18px;
+    }
+}
