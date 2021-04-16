@@ -1,24 +1,21 @@
 const express = require("express")
 const app = express();
 const path = require("path");
-const puerto = process.env.PORT
+const puerto = process.env.PORT;
+//Gerentes de Ruteo
+const homeRouter = require('./routes/homeRouter');
+const productRouter = require('./routes/productRouter');
+const userRouter = require('./routes/userRouter');
 
 app.use(express.static('./public'));
-
+//Motor Ejs
 app.set('view engine', 'ejs')
+//Llamar al ruteo
+app.use('/', homeRouter);
+//app.use('/', userRouter);
+//app.use('/products', productRouter);
 
-app.get('/', (req, res) => {
-    res.render('home')
-});
-app.get('/register', (req, res) => {
-    res.render('register')
-});
-app.get('/login', (req, res) => {
-    res.render('login')
-});
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname,'/'))
-});
+//Levantar Servidor
 app.listen(puerto || 3000, function() {
     console.log("Servidor corriendo en el puerto 3000");
 });
