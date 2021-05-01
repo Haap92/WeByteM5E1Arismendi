@@ -5,7 +5,7 @@
     <%- include('partials/header') %>
     <main>
         <section>
-            <div class="r1"><div class="left50"><img src="/img/<%= product.image %>" alt="" class="product_img"></div>
+            <div class="r1"><div class="left50"><img src="/images/<%= product.image %>" alt="" class="img" width="100%"></div>
             <div class="right50">
              <h1><%= product.name %></h1>
              <br><br>
@@ -14,9 +14,9 @@
              <p class="pd_prod-desc"><%= product.descuento %> % OFF</p>
              <br><br>
              <div class="r2"><div class="left20"><form action="/products/<%= product.id %>?_method=DELETE" method="POST" class="create-form" id="eliminar">
-                 <button type="submit" class="boton">Eliminar</button></form></div>
+                 <button type="submit" class="boton-borrar">Eliminar</button></form></div>
                  <div class="right80"><form action="/products/<%= product.id %>/edit" method="get" class="create-form" id="editar">
-                     <button type="submit" class="boton">Editar</button></form></div>
+                     <button type="submit" class="boton-enviar">Editar</button></form></div>
                  </div>
              
              

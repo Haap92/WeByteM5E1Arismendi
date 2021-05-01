@@ -1,20 +1,18 @@
 [
  {
-  "id": 1,
-  "name": "Cafetera Moulinex Dolce Gusto Edited",
-  "price": 100,
-  "discount": 50,
-  "category": "visited",
+  "name": "Cafetera Moulinex Dolce Gusto",
+  "price": "15000",
+  "descuento": "",
   "description": "Cafetera Dolce Gusto Lumio. La cafetera Dolce Gusto Lumio es de variedad automática que ha llegado con un diseño radical al que nos tenía acostumbrados Dolce Gusto.En este post te contamos todo lo que necesitas saber sobre ella, desde sus características técnicas hasta la calidad de las cápsulas o price.",
+  "id": "1",
   "image": "img-cafetera-moulinex.jpg"
  },
  {
-  "id": 2,
   "name": "Macbook Pro 2022",
-  "price": 500,
-  "discount": 3,
-  "category": "in-sale",
+  "price": "500",
+  "descuento": "",
   "description": "Macbook Pro 2019 Mpxq2ll/a Intel Core i5 2.3 Ghz 8gb RAM 128gb SSD Pantalla 13.3\" Retina Apple Nueva Original. Importada de USA. Se entrega con la factura de compra para contar con la garantía del fabricante",
+  "id": "2",
   "image": "img-macbook-pro-2019.jpg"
  },
  {
@@ -90,15 +88,6 @@
   "category": "visited"
  },
  {
-  "id": 11,
-  "name": "Parlante Inalámbrico Bose Soundtouch 10",
-  "description": "Parlante Inalámbrico Bose Soundtouch 10. SoundTouch®.La manera más sencilla de reproducir música en todo su hogar de forma inalámbrica. Características. » Marca: Bose. » Modelo: SoundTouch. » Color: Negro",
-  "price": 29990,
-  "discount": 12,
-  "image": "img-parlante-bose.jpg",
-  "category": "visited"
- },
- {
   "id": 12,
   "name": "Home Theatre Sony Bdv-e4100",
   "description": "El sonido Surround de 5.1 canales y 1000 W proporciona un audio de verdadero impacto en los efectos especiales de películas y efectos de sonido de música y deportes. Con la tecnología Near Field Communication(NFC) podés disfrutar de Sonido One- Touch para reproducir música de forma instantánea",
@@ -142,5 +131,46 @@
   "category": "in-sale",
   "description": "Deja que la música dance cobre vida con EXTRA BASS™ Anima el ambiente con EXTRA BASS™1. Un radiador pasivo trabaja con el parlante monoaural para potenciar los tonos bajos y mejorar los graves, a pesar del tamaño compacto. ",
   "image": "img-parlante-sony.jpg"
+ },
+ {
+  "name": "Play 5",
+  "price": "120000",
+  "descuento": "5",
+  "description": "PlayStation 5 Digital Edition, una versión digital de la consola con el mismo hardware que el modelo base, pero sin la unidad de disco 4K. Bajo la misma línea de diseño futurista, la versión digital de la PS5 tiene un cuerpo más angosto, y según Sony \"la experiencia de juego de PS5 será la misma\".",
+  "image": "img-1619559848028.png",
+  "id": 17
+ },
+ {
+  "ID": "18",
+  "name": "Microcomponente Con Bluetooth Sony Cmt",
+  "price": "25999",
+  "descuento": "10",
+  "description": "El CMT-SBT20 tiene un clásico diseño de tres cajas, perfecto para cualquier estancia, que permite la instalación independiente y una mejor separación estéreo. Ofrece más de lo que parece, como conexión One-Touch NFC para una reproducción de música inalámbrica mediante Bluetooth®, con la que podrás disfrutar de la música tanto dentro como fuera.",
+  "id": "18",
+  "image": "img-1619560217332.jpg"
+ },
+ {
+  "name": "Parlante Karaoke Bluetooth Luces Micrófono",
+  "price": "6000",
+  "descuento": "5",
+  "description": "Parlante Karaoke Con Control y Micrófono Inalámbrico Modelo : FD-PKBT15 SKU: 11385 Es perfecto para fiestas de karaoke e ideal como un pequeño sistema de sonido. Puedes conectar directamente tu celular, o cualquier dispositivo bluetooth para reproducir música sin necesidad de cables.",
+  "id": "19",
+  "image": "img-1619560396353.jpg"
+ },
+ {
+  "name": "Parlante Bluetooth Potente",
+  "price": "1500",
+  "descuento": "3",
+  "description": "El parlante portátil JBL Go 2 tiene todas las funciones que necesitás para llevarlo y usarlo en cualquier lugar. Con el bluetooth vas a tener la facilidad de poner música desde tu smartphone, tablet o computadora. ",
+  "image": "img-1619564181335.jpg",
+  "id": 20
+ },
+ {
+  "name": "Xbox Series X",
+  "price": "199999",
+  "descuento": "5",
+  "description": "\"La Xbox Series X es como si la Xbox One tuviera dentro un Lamborghini\"\r\n– Polygon",
+  "image": "img-1619845352822.jpg",
+  "id": 21
  }
 ]

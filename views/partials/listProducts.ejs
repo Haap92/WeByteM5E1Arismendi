@@ -1,9 +1,15 @@
-<article class="sombra"><a href="/products/<%= product.id%>">
-    <img src="/img/<%= product.image %>" alt="Productos">
-    <div class="main-article">
-    <i class="fas fa-truck verde"></i>
-    <p class="precios">$<%= product.price %></p>
-    <p class="descuentos"><%= product.descuento %> % off</p>
-    <p class="descripciones"><%= product.name %></p></a>
-</div>
+<article>
+    <a href="/products/<%= product.id%>">
+        <img src="/images/<%= product.image %>" alt="<%= product.image %>" width="100%" class="img"></a>
+    <div>
+        <i class="fas fa-truck"></i>
+        <p class="precio">$<%= product.price %>
+        </p>
+        <p class="descuento">
+            <%= product.discount %>% OFF
+        </p>
+        <p class="descripcion"><strong>
+                <%= product.name %>
+            </strong></p>
+    </div>
 </article>

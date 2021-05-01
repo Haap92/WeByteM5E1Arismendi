@@ -11,13 +11,13 @@
         <main>
             <h3><strong>Basado en tu última visita</strong></h3>
             <section>
-                <% products.forEach(product => { %>
+                <% visited.forEach(product => { %>
                     <%- include('partials/product', { product }) %>
                 <% })%>
             </section>
             <h3><strong>Ofertas</strong></h3>
             <section>
-                <% products.forEach(product => { %>
+                <% inSale.forEach(product => { %>
                     <%- include('partials/product', { product }) %>
                 <% })%>
             </section>

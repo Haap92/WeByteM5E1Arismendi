@@ -186,7 +186,7 @@ input[type=checkbox]{
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 50%;
+    width: 100%;
 }
 .boton-borrar {
     background-color: #4c0303;
@@ -195,7 +195,7 @@ input[type=checkbox]{
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 50%;
+    width: 100%;
 }
 
 .contenedor-registro-botones {
@@ -335,6 +335,63 @@ footer .cr{
     color: gray;
     margin-left: 5%;
 }
+
+main section div.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+} 
+.create-form{
+    padding: 20px 15px;
+    margin-top: 15px;
+}
+.control-formulario {
+    margin-bottom: 15px ;
+    justify-content: center;
+}
+
+.control-formulario label {
+    margin-bottom: 5px ;
+    display: block;
+}
+.label-titulo {
+    margin-bottom: 5px ;
+    display: block;
+    font-weight: bold;
+    width: 100%;
+    
+}
+.perfil {display: flex; flex-wrap: wrap;}
+.control-formulario .perfil .label-radio {flex: 2 1 auto; text-align: left;}
+.espacio {padding-left: 30px;}
+
+.control{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #979797;
+    background-color: #f3f3f3;
+
+}
+.date {color: #333333; font-family: 'Roboto', sans-serif;}
+select, textarea {color: #333333; font-family: 'Roboto', sans-serif;}
+input:focus {
+    background-color: rgb(228, 228, 228);
+    border: none;
+    color: #333333;
+  }
+  .r1 {width: 100%; display: flex; justify-content: space-between; margin: 10px;}
+  .r2 {width: 100%; display: flex; justify-content: space-between; }
+  .left50 {flex: 1 1 40%; align-items: center; }
+  .right50{flex: 1 1 60%; align-items: center; padding-left: 25px; }
+  .left20 {flex: 1 1 20%; align-items: center; }
+  .right80{flex: 1 1 80%; align-items: center; padding-left: 25px; }
+ 
+  .right50 h1 {font-size: 35px; }
+  .right50 p {font-size: 18px; }
+  .e404 {width: 30%; display: block; margin: auto; padding-top: 20px; }
+   
+  .tituloSection{font-size: 20px; padding: 20px 0px; color: #03264c;}
 
 @media (max-width: 360px) {
     header .navbar{
@@ -487,4 +544,5 @@ footer .cr{
     .boton-borrar{
         font-size: 18px;
     }
+
 }
