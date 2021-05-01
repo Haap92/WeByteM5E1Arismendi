@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+    <main>
+    <section>
+        <form action="/products/store" method="POST" class="create-form" enctype="multipart/form-data">
+            <div class="tituloSection">
+                <h3>Alta de productos</h3>
+            </div>
+    <div class="control-formulario">
+        <input type="text" name="name" placeholder="Nombre Producto" class="control" minlength="5"><span></span>
+    </div>
+    <div class="control-formulario">
+      <input type="number" name="price" placeholder="Precio" class="control" minlength="5"><span></span>
+    </div>
+    <div class="control-formulario">
+        <input type="number" name="descuento" placeholder="Descuento" class="control" minlength="5"><span></span>
+    </div>
+        <div class="control-formulario">
+        <label class="label-titulo">Imagen del producto</label>
+        <input type="file" name="image" accept=".jpg, .png" class="control none">
+    </div>
+        <div class="control-formulario">
+            <textarea name="description" rows="10" cols="50" class="control" minlength="8" placeholder="Descripcion del producto" ></textarea><span></span>
+    </div>
+    <button type="submit" class="boton">Guardar</button>
+    <button type="reset" class="boton">Borrar</button>
+    </form>
+</section>
+</main>
+<%- include('partials/footer') %>
+
+</body>
+</html>

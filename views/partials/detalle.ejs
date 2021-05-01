@@ -1,0 +1,17 @@
+<div class="r1">
+    <div class="left50"><img src="/img/<%= product.image %>" alt="Productos"></div>
+    <div class="right50">
+   <h1><%= product.name %></h1>
+   <p><%= product.description %></p>
+   <p class="pd_prod-precio"><%= product.price %></p>
+   <p class="pd_prod-desc"><%= product.descuento %> % off</p>
+   <br><br>
+   <div class="r2"><div class="left20"><form action="/products/:id?_method=DELETE" method="POST" class="create-form" id="eliminar">
+       <button type="submit" class="boton">Eliminar</button></form></div>
+       <div class="right80"><form action="/products?_method=PUT" method="POST" class="create-form" id="editar">
+           <button type="submit" class="boton">Editar</button></form></div>
+       </div>
+   
+   
+   </div>
+</div>

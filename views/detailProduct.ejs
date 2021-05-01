@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+    <main>
+        <section>
+            <div class="r1"><div class="left50"><img src="/img/<%= product.image %>" alt="" class="product_img"></div>
+            <div class="right50">
+             <h1><%= product.name %></h1>
+             <br><br>
+             <p><%= product.description %></p>
+             <p class="pd_prod-precio">$<%= product.price %></p>
+             <p class="pd_prod-desc"><%= product.descuento %> % OFF</p>
+             <br><br>
+             <div class="r2"><div class="left20"><form action="/products/<%= product.id %>?_method=DELETE" method="POST" class="create-form" id="eliminar">
+                 <button type="submit" class="boton">Eliminar</button></form></div>
+                 <div class="right80"><form action="/products/<%= product.id %>/edit" method="get" class="create-form" id="editar">
+                     <button type="submit" class="boton">Editar</button></form></div>
+                 </div>
+             
+             
+             </div></div>
+         </section>
+</main>
+<br><br><br>
+<%- include('partials/footer') %>
+</body>
+</html>
